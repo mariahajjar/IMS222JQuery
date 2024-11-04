@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JQuery With Maria</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").toggle();
+      });
+    });
+    </script>
+
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+    <style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+    
+        <div class = "navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Coffee</a>
+            <a href="content.html">Social Media's Impact</a>
+            <a href="materialize.html">Materialize</a>
+            <a href="jquery.html">JQuery</a>
+        </div>
+        </header>
+
+        <h1>JQuery Practice</h1>
+
+<section style="background-color:bisque">
+    <p>Click this if you dislike coffee!</p>
+    <p>Click this if you think coffee is bitter!</p>
+    <p>Drain your coffee!</p>
+</section>
+
+<section style="background-color:chocolate">
+    <button>Hide and Seek (hint: click and click again!)</button>
+
+    <p>Milk Chocolate</p>
+    <p>Dark Chocolate.</p>
+</section>
+
+<section style="background-color:azure">
+    <div id="flip">Surprise Party (Click Here)</div>
+    <div id="panel">HAPPY BIRTHDAY!!</div>
+</section>
+
+</body>
+</html>
